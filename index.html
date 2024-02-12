@@ -11,7 +11,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Automation of X-ray Diffraction Analysis">
-        <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+        <meta name="keywords" content="XRD, Powder diffraction, FullProf">
         <meta name="author" content="Hwang Suehyeon">
 		
 		
@@ -103,25 +103,26 @@
 							<h2>FullProf Digest: Powder Diffraction</h2>
 						</div>
 						
-						
-						<div class="col-md-7 contact-form wow animated fadeInLeft">
-							<form action="#" method="post">
-								<div class="input-field">
-									<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
-								</div>
-								<button type="submit" id="submit" class="btn btn-blue btn-effect">Plot</button>
-							</form>
-						</div>
-						
 						<div class="col-md-5 wow animated fadeInRight">
 							<address class="contact-details">
 								<h3>Contact Us</h3>						
-								<p><i class="fa fa-pencil"></i>Phoenix Inc.<span>PO Box 345678</span> <span>Little Lonsdale St, Melbourne </span><span>Australia</span></p><br>
-								<p><i class="fa fa-phone"></i>Phone: (415) 124-5678 </p>
-								<p><i class="fa fa-envelope"></i>website@yourname.com</p>
+								<p><i class="fa fa-map-marker"></i>Pusan National University<span>Busan, Korea</span></p><br>
+								<p><i class="fa fa-envelope"></i>fullprof.pnu@gmail.com</p>
 							</address>
 						</div>
-			
+						
+						<div class="col-md-7 contact-form wow animated fadeInLeft">
+							<div id="drop-area" class="text-center drop-area">
+								<form class="my-form">
+									<input type="file" id="fileElem" multiple accept="image/*">
+									<label class="button" for="fileElem">파일 선택</label>
+									<span class="box__dragndrop">또는 파일을 이곳으로 드래그하세요</span>
+								</form>
+							</div>
+							<progress id="progress-bar" max=100 value=0></progress>
+							<!--div id="gallery"></div--> 
+						</div>		
+												
 					</div>
 				</div>
 			</section>
@@ -229,26 +230,24 @@
 		
 		<!-- Essential jQuery Plugins
 		================================================== -->
-		<!-- Main jQuery -->
         <script src="js/jquery-1.11.1.min.js"></script>
-		<!-- Twitter Bootstrap -->
         <script src="js/bootstrap.min.js"></script>
-		<!-- Single Page Nav -->
         <script src="js/jquery.singlePageNav.min.js"></script>
-		<!-- jquery.fancybox.pack --
         <script src="js/jquery.fancybox.pack.js"></script>
-		<!-- Google Map API -->
 		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<!-- Owl Carousel -->
         <script src="js/owl.carousel.min.js"></script>
-        <!-- jquery easing -->
         <script src="js/jquery.easing.min.js"></script>
-        <!-- Fullscreen slider -->
         <script src="js/jquery.slitslider.js"></script>
         <script src="js/jquery.ba-cond.min.js"></script>
-		<!-- onscroll animation -->
         <script src="js/wow.min.js"></script>
+
 		<!-- Custom Functions -->
         <script src="js/main.js"></script>
+		<!-- ================================================== -->
+
+
+		<!---->
+		<script src="js/upload.js"></script>				
+
     </body>
 </html>
